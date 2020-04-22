@@ -2,8 +2,6 @@
 
 $_SERVER['SERVER_PORT'] = 23456;
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-
 function str_rot($message, $shift = 13) {
     static $letters = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz';
     $shift = (int)$shift % 26;
@@ -36,7 +34,3 @@ function str_rot($message, $shift = 13) {
     header('Content-Type: application/json');
     $array = array('EncodedMessage' => $data);
     echo json_encode($array);
-
-} else {
-    exit("API Running on port " . $_SERVER['SERVER_PORT']);
-}
