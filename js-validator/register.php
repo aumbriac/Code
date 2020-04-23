@@ -1,5 +1,5 @@
 <?php
-    $connect = new PDO("mysql:host=localhost;dbname=codingchallenge", "root", "admin123");
+    $connect = new PDO("mysql:host=localhost;dbname=codingchallenge", "root", "");
 
 
     if (isset($_POST['register'])){
