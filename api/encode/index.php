@@ -2,6 +2,10 @@
 
 $_SERVER['SERVER_PORT'] = 23456;
 
+if ($_SERVER['REQUEST_METHOD'] === 'GET'){
+    exit('API running on port '.$_SERVER['SERVER_PORT']);
+}
+
 function str_rot($message, $shift = 13) {
     static $letters = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz';
     $shift = (int)$shift % 26;
