@@ -1,5 +1,6 @@
 # JS-Form-Validator
 Client &amp; Server Realtime Form Validation 
+Live example: https://anthonyumbriac.com/code/js-validator
 
 1) Place the 'src' folder on your localhost and run it. 
 IMPORTANT: To utilize the registration feature that creates a new user in a MySQL database, be sure to update the database connection credentials in 'register.php'.
