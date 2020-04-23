@@ -1,8 +1,8 @@
 $('form').submit(function (e) {
+  e.preventDefault();
  let username = $('#username').val(),
   email = $('#email').val(),
   password = $('#password').val();
- e.preventDefault();
  $.ajax({
   method: 'POST',
   url: 'register.php',
@@ -23,7 +23,10 @@ $('form').submit(function (e) {
     alert('Registration successful');
     $('form')[0].reset();
     $('#submit').attr('disabled', true);
-   }
+   },
+   error: function() {
+    alert('Server error. Please try again.');
+   },
   },
  });
 });
@@ -38,6 +41,8 @@ $('#password, #confirmPassword').on('blur', function () {
 $('#password, #confirmPassword').on('focus', function () {
  $('.alert').hide();
 });
+
+var globalEmail;
 
 $('.form-control').on('keyup', function () {
  if (
@@ -54,7 +59,6 @@ $('.form-control').on('keyup', function () {
  }
 });
 
-var globalEmail;
 $('#email').bind('input propertychange paste', function () {
  let email = $('#email').val(),
   emailValidation = /[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?/i;
