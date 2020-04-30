@@ -1,5 +1,5 @@
 # Caesarian-Shift-Cipher-API
-This API allows users to encode messages with a shift cipher.
+This API allows users to encode messages with a Caesarian shift cipher.
 
 1) Download a platform for API development, such as Postman
 2) Put the api folder on your localhost
