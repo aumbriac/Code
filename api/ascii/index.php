@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
 
 function str_rot($message, $shift) {
     $min_ALPHA = 65;
-    $max_ALPHA = 90;
+    $max_ALPHA = 91;
     $min_alpha = 97;
     $max_alpha = 123;
     $finalString = '';
