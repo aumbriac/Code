@@ -1,4 +1,4 @@
-# API-Shift-Cipher
+# Caesarian-Shift-Cipher-API
 This API allows users to encode messages with a shift cipher.
 
 1) Download a platform for API development, such as Postman
