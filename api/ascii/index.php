@@ -1,7 +1,5 @@
 <?php
 
-$_SERVER['SERVER_PORT'] = 23456;
-
 if ($_SERVER['REQUEST_METHOD'] === 'GET'){
     exit('API running on port '.$_SERVER['SERVER_PORT']);
 }
