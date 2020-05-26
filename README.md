@@ -20,4 +20,4 @@ Output:
 }
 `
 
-You can also test the API by making a POST request to https://anthonyumbriac.com/code/api/encode/ or https://anthonyumbriac.com/code/api/ascii/ with the above parameters.
+You can also test the API by making a POST request to https://anthonyumbriac.com/api/encode/ or https://anthonyumbriac.com/api/ascii/ with the above parameters.
